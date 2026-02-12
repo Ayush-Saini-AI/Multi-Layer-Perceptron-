@@ -1,178 +1,74 @@
-# Multi-Layer-Perceptron-
-Network Intrusion Detection using MLP (CICIDS 2018)
-
-
-A from-scratch implementation of a Multi-Layer Perceptron (MLP) for Network Intrusion Detection Systems (NIDS) using the CICIDS 2018 dataset.
-The project focuses on understanding neural network internals rather than relying on high-level deep learning frameworks.
-
-Table of Contents
-
-Overview
-
-Why This Project
-
-Features
-
-Project Structure
-
-Getting Started
-
-Usage
-
-Dataset
-
-Help & Support
-
-Contributing
-
-Maintainer
-
-License
-
-Overview
-
-This repository contains a Jupyter Notebook that implements an MLP classifier using NumPy to detect malicious network traffic.
-The workflow covers the entire ML pipeline:
-
-Data loading and preprocessing
-
-Feature scaling and label encoding
-
-Neural network construction
-
-Forward and backward propagation
-
-Model training and evaluation
-
-The notebook is Google Colab–ready and suitable for academic labs, research reproduction, and learning purposes.
-
-Why This Project
-
-📚 Educational focus – Understand neural networks at a mathematical and implementation level
-
-🛡️ Security domain – Uses a real-world NIDS dataset
-
-🔍 Transparent ML – No TensorFlow / PyTorch abstractions
-
-☁️ Colab compatible – No local GPU required
-
-🎓 Academic ready – Suitable for DL labs, viva, and presentations
-
-Features
-
-Multi-Layer Perceptron implemented from scratch
-
-ReLU and Softmax activations
-
-Cross-entropy loss
-
-Gradient descent optimization
-
-Data normalization and label encoding
-
-Train–test evaluation
-
-Modular and readable notebook structure
-
-Project Structure
-.
-├── MLP_CICIDS (1).ipynb     # Main implementation notebook
-├── README.md               # Project documentation
-├── LICENSE                 # License information
-└── docs/
-    └── CONTRIBUTING.md     # Contribution guidelines
-
-Getting Started
-Prerequisites
-
-Python 3.8+
-
-Google Colab (recommended)
-
-Basic knowledge of:
-
-Machine Learning
-
-Neural Networks
-
-Python & NumPy
-
-Installation
-
-No local installation is required if using Google Colab.
-
-If running locally:
-
-pip install numpy pandas scikit-learn
-
-Usage
-
-Open MLP_CICIDS (1).ipynb in Google Colab
-
-Mount Google Drive:
-
-from google.colab import drive
-drive.mount('/content/drive')
-
-
-Place the CICIDS dataset in your Drive
-
-Update the dataset path in the notebook:
-
-"/content/drive/MyDrive/LAB_CICIDS 2018_1.csv"
-
-
-Run all cells sequentially
-
-Dataset
-
-This project uses the CICIDS 2018 dataset by the Canadian Institute for Cybersecurity.
-
-Realistic benign and attack traffic
-
-Multiple attack categories
-
-Widely used in NIDS research
-
-📌 Note:
-The dataset is not included in this repository due to size limitations.
-You must download it separately and upload it to Google Drive.
-
-Help & Support
-
-Check inline comments inside the notebook
-
-Open a GitHub Issue for bugs or questions
-
-Use Discussions for conceptual or research-related queries
-
-Contributing
-
-Contributions are welcome and appreciated.
-
-Please read:
-
-docs/CONTRIBUTING.md
-
-Possible contributions:
-
-Performance optimization
-
-Additional evaluation metrics
-
-Deeper MLP architectures
-
-Adversarial attack experiments
-
-Visualization improvements
-
-Maintainer
-
-Ayush Saini
-AI / ML Enthusiast
-
-
-
-This project is licensed under the MIT License.
-See the LICENSE
- file for details.
+# Multi-Layer Perceptron
+
+## Overview
+The Multi-Layer Perceptron (MLP) is a type of artificial neural network that consists of multiple layers of nodes, where each layer is fully connected to the next. This model is capable of learning complex relationships in data and is widely used in various machine learning applications, including classification, regression, and more.
+
+## Why It's Useful
+MLPs are advantageous for their ability to model non-linear relationships and are suitable for a wide range of tasks. They are commonly used in areas such as:
+- Image Recognition
+- Natural Language Processing
+- Time Series Prediction
+
+## Installation/Setup
+To install and set up the Multi-Layer Perceptron, follow these steps:
+1. Clone the repository:
+   ```
+   git clone https://github.com/Ayush-Saini-AI/Multi-Layer-Perceptron-
+   cd Multi-Layer-Perceptron-
+   ```
+2. Install required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+## Usage Examples
+Once you have set up the project, you can use the following examples to get started:
+
+### Example 1: Basic Usage
+```python
+from mlp import MultiLayerPerceptron
+
+# Create an MLP instance
+mlp = MultiLayerPerceptron(layers=[10, 5, 1])
+
+# Train the model
+mlp.train(X_train, y_train)
+
+# Make predictions
+predictions = mlp.predict(X_test)
+```
+
+### Example 2: Training with Custom Data
+```python
+import numpy as np
+
+# Sample data
+X = np.random.rand(100, 10)
+Y = np.random.rand(100, 1)
+
+# Train the model
+mlp.train(X, Y)
+```
+
+## Contribution Guidelines
+We welcome contributions from everyone! To get involved:
+1. Fork the repository.
+2. Create a new branch for your feature:
+   ```
+   git checkout -b my-feature
+   ```
+3. Commit your changes:
+   ```
+   git commit -m 'Add some feature'
+   ```
+4. Push to the branch:
+   ```
+   git push origin my-feature
+   ```
+5. Open a pull request.
+
+## Support Resources
+For support, please reach out through the following channels:
+- [Issues page](https://github.com/Ayush-Saini-AI/Multi-Layer-Perceptron-/issues)
+- [Discussion forum](https://github.com/Ayush-Saini-AI/Multi-Layer-Perceptron-/discussions)
+- Email: support@ayushsaini.ai
