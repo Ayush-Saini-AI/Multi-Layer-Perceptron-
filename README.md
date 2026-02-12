@@ -67,8 +67,3 @@ We welcome contributions from everyone! To get involved:
    ```
 5. Open a pull request.
 
-## Support Resources
-For support, please reach out through the following channels:
-- [Issues page](https://github.com/Ayush-Saini-AI/Multi-Layer-Perceptron-/issues)
-- [Discussion forum](https://github.com/Ayush-Saini-AI/Multi-Layer-Perceptron-/discussions)
-- Email: support@ayushsaini.ai
